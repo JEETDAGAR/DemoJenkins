@@ -26,11 +26,3 @@ hooks:
     - location: scripts/stop_flask1.sh
       timeout: 300
       runas: root
-  BlockTraffic:
-    - location: /tmp/null.sh
-      timeout: 1  # Reduce default timeout
-      enabled: true
-  AllowTraffic: 
-    - location: /tmp/null.sh
-      timeout: 1  # Reduce default timeout
-      enabled: true
